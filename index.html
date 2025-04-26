@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kshitij Patil | Firmware Engineer & Programmer</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <style>
+    /* Custom cursor */
+    body {
+      cursor: url('https://unpkg.com/curtain/dist/icons/cursor.svg'), auto;
+    }
+    /* Glitch text effect */
+    .glitch {
+      position: relative;
+      color: white;
+      font-size: 4rem;
+      font-weight: 800;
+      animation: flicker 3s infinite;
+    }
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: none;
+      }
+      20%, 24%, 55% {
+        text-shadow:
+          2px 2px red,
+          -2px -2px cyan;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 scroll-smooth">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-gray-900 bg-opacity-80 backdrop-blur z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#home" class="text-2xl font-bold text-white">Kshitij Patil</a>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-indigo-400 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-400 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-indigo-400 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-indigo-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="glitch mb-4" data-aos="fade-down" data-aos-duration="1200">Hi, I'm Kshitij</h1>
+    <p class="text-xl mb-6" data-aos="fade-up" data-aos-duration="1200">Associate Software Engineer | Competitive Programmer | Web Dev Enthusiast</p>
+    <a href="/resume.pdf" class="px-8 py-4 bg-indigo-500 rounded-full text-white font-semibold hover:bg-indigo-600 transition" data-aos="zoom-in" data-aos-duration="1200">Download Resume</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6 lg:px-0">
+      <h2 class="text-4xl font-bold mb-6 text-center" data-aos="fade-right">About Me</h2>
+      <p class="max-w-3xl mx-auto leading-relaxed text-lg" data-aos="fade-left" data-aos-delay="200">
+        Passionate and result-driven firmware engineer at Espressif Systems, leveraging a strong foundation in electronics and communication engineering. Graduated from VIT Pune in 2023, my journey has been marked by a commitment to continuous learning and a blend of technical skills and interpersonal development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20">
+    <div class="container mx-auto px-6 lg:px-0">
+      <h2 class="text-4xl font-bold mb-10 text-center" data-aos="fade-up">Technical Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="flip-left">
+          <h3 class="text-2xl font-semibold mb-4">Languages</h3>
+          <ul class="list-disc list-inside">
+            <li>C, C++, Java, Python</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="flip-left" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-4">Embedded Systems</h3>
+          <ul class="list-disc list-inside">
+            <li>FreeRTOS, ESP-IDF, Firmware Design & Optimization</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="flip-left" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold mb-4">Web</h3>
+          <ul class="list-disc list-inside">
+            <li>Node.js, Express, MongoDB, React, Tailwind CSS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-6 lg:px-0">
+      <h2 class="text-4xl font-bold mb-10 text-center" data-aos="zoom-in">Projects</h2>
+      <div class="space-y-12">
+        <div class="p-6 bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up">
+          <h3 class="text-2xl font-semibold mb-2">OptimOS (Mar 2025 – Present)</h3>
+          <p>Building an OS kernel from scratch: multitasking, memory mgmt, ELF loading, security.</p>
+        </div>
+        <div class="p-6 bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">Project Kuber (May 2024 – Aug 2024)</h3>
+          <p>Python event-driven trading framework for Indian markets—achieved 23% returns.</p>
+        </div>
+        <div class="p-6 bg-gray-700 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-semibold mb-2">Drivable Road Detection (Jun 2022 – Nov 2022)</h3>
+          <p>Classical ML computer-vision project with 86.48% accuracy in varied traffic conditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 text-center">
+    <div class="container mx-auto px-6 lg:px-0" data-aos="fade-up">
+      <h2 class="text-4xl font-bold mb-6">Let's Connect</h2>
+      <div class="flex justify-center space-x-6 text-3xl">
+        <a href="https://github.com/kvp1703" aria-label="GitHub" class="hover:text-indigo-400 transition">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/kvp1703" aria-label="LinkedIn" class="hover:text-indigo-400 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:kshitijvpatil1703@gmail.com" aria-label="Email" class="hover:text-indigo-400 transition">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gray-900">
+    <p>&copy; 2025 Kshitij Patil. All rights reserved.</p>
+  </footer>
+
+  <!-- Font Awesome & AOS Scripts -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
